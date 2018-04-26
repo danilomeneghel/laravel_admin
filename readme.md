@@ -77,8 +77,8 @@ Laravel Admin is licensed under <a href="license.md">The MIT License (MIT)</a>.
 
 ## Screenshots
 
-<img src="./public/img/screenshots01.png"><br>
-<img src="./public/img/screenshots02.png"><br>
-<img src="./public/img/screenshots03.png"><br>
-<img src="./public/img/screenshots04.png"><br>
-<img src="./public/img/screenshots05.png"><br>
+<img src="public/img/screenshot01.png"><br>
+<img src="public/img/screenshot02.png"><br>
+<img src="public/img/screenshot03.png"><br>
+<img src="public/img/screenshot04.png"><br>
+<img src="public/img/screenshot05.png"><br>
