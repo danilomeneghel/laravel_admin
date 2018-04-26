@@ -3,3 +3,7 @@ input.content {
     padding: 6px 12px !important;
     margin: 0 !important;
 }
+.dashboard-title {
+  text-align: center;
+  margin-top: -15px;
+}

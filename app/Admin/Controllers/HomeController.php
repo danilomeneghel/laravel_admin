@@ -15,22 +15,22 @@ class HomeController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('Dashboard');
-            $content->description('');
+            //$content->header('Dashboard');
+            //$content->description('');
 
-            //$content->row(Dashboard::title());
+            $content->row('<h2 class="dashboard-title">Laravel Admin</h2>');
 
             $content->row(function (Row $row) {
 
-                $row->column(6, function (Column $column) {
+                $row->column(12, function (Column $column) {
                     $column->append(Dashboard::environment());
                 });
 
-                $row->column(6, function (Column $column) {
+                /*$row->column(6, function (Column $column) {
                     $column->append(Dashboard::extensions());
                 });
 
-                /*$row->column(4, function (Column $column) {
+                $row->column(4, function (Column $column) {
                     $column->append(Dashboard::dependencies());
                 });*/
             });

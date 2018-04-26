@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/laravel-admin/public'),
+    'url' => env('APP_URL', 'http://localhost/laravel_admin/public'),
 
     /*
     |--------------------------------------------------------------------------

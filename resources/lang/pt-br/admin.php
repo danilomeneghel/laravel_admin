@@ -12,7 +12,8 @@ return [
     'remember_me'           => 'Lembrar',
     'user_setting'          => 'Configurações de Utilizador',
     'avatar'                => 'Avatar',
-
+    'search'                => 'Procurar',
+    
     'list'         => 'Lista',
     'new'          => 'Novo',
     'create'       => 'Criar',

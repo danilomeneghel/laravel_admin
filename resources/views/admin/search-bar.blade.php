@@ -21,7 +21,7 @@
 
 <form action="{{ route('posts.index') }}" method="get" class="search-form" pjax-container>
     <div class="input-group input-group-sm ">
-        <input type="text" name="title" class="form-control" placeholder="Search...">
+        <input type="text" name="title" class="form-control" placeholder="{{ trans('admin.search') }}">
         <span class="input-group-btn">
             <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
           </span>

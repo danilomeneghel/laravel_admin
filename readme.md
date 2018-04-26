@@ -10,7 +10,6 @@ Project of an Administrative Panel developed with the Laravel Framework 5.
 - Validator
 - MultiLanguages
 - Routes
-- Artisan
 - Grid View
 - Pagination
 - Export to Excel
@@ -22,9 +21,11 @@ Project of an Administrative Panel developed with the Laravel Framework 5.
 - PHP 7
 - JS
 - Jquery
+- Json
 - CSS and SCSS
 - Bootstrap
 - Composer
+- Artisan
 
 ## Installation
 
@@ -62,7 +63,22 @@ $ php artisan serve
 
 Finally open `http://localhost:8000/` in your browser.
 
+## Connection
+
+To be able to connect, I advise you to create an account on the panel.
+
+  - You can use the default:
+    User: admin
+    Password: admin
 
 ## License
 
-MIT
+Laravel Admin is licensed under <a href="license.md">The MIT License (MIT)</a>.
+
+## Screenshots
+
+<img src="public/img/screenshots01.png"><br>
+<img src="public/img/screenshots02.png"><br>
+<img src="public/img/screenshots03.png"><br>
+<img src="public/img/screenshots04.png"><br>
+<img src="public/img/screenshots05.png"><br>
