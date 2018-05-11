@@ -560,8 +560,7 @@ CREATE TABLE `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id`, `username`, `password`, `name`, `avatar`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', '$2y$10$rh9ucJVaMWOxhSzgketax.d8YscbOsBCkB2gp3tNINtRBkhfpkjQC', 'Administrador', 'images/avatar-programmer.png', '9iDjK4ZXRzcnbCMs7pvtfhuEceyKvyjzBWF8xsn6K9eMUOFDsEGuLdravwqN', '2017-07-19 06:23:47', '2018-04-25 20:12:46'),
-(3, 'danilo', '$2y$10$oo5MA.rsl1Qlr7XGwd7nwuEAK3zNHlfppcMG.iKtGJ73436DWcaA2', 'Danilo', 'images/avatar-user.png', 'nHLLjELz9QciQI7yZCtE8hyZwDrnaPoApflIF6q24xBE0GAvIY3xlCi113JC', '2018-04-25 18:10:59', '2018-04-25 18:10:59');
+(1, 'admin', '$2y$10$rh9ucJVaMWOxhSzgketax.d8YscbOsBCkB2gp3tNINtRBkhfpkjQC', 'Administrador', 'images/avatar-programmer.png', '9iDjK4ZXRzcnbCMs7pvtfhuEceyKvyjzBWF8xsn6K9eMUOFDsEGuLdravwqN', '2017-07-19 06:23:47', '2018-04-25 20:12:46');
 
 -- --------------------------------------------------------
 
@@ -4852,13 +4851,24 @@ CREATE TABLE `password_resets` (
 
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `avatar` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `provider` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `provider_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `access_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `avatar`, `provider`, `provider_id`, `access_token`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'admin@admin.com', '$2y$10$1hYeVdrj6ZwHsdjpFRb00uyCerLrWMh5NFBgASXEBrj0iH3ljpexS', NULL, NULL, NULL, NULL, NULL, '2018-05-10 18:43:45', '2018-05-10 18:43:45');
 
 -- --------------------------------------------------------
 
