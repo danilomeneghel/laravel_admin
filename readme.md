@@ -18,7 +18,7 @@ Project of an Administrative Panel developed with the Laravel Framework 5.
 
 ## Requirements
 - Apache
-- PHP >= 5.5.9
+- PHP 7
 - MySql >=5
 - Composer
 
