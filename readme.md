@@ -16,6 +16,12 @@ Project of an Administrative Panel developed with the Laravel Framework 5.
 - Flash Messages
 - View Blade
 
+## Requirements
+- Apache
+- PHP >= 5.5.9
+- MySql >=5
+- Composer
+
 ## Tecnologies
 
 - PHP 7
@@ -73,7 +79,7 @@ To be able to connect, I advise you to create an account on the panel.
 
 ## License
 
-Laravel Admin is licensed under <a href="license.md">The MIT License (MIT)</a>.
+Laravel Admin is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
 
 ## Screenshots
 
